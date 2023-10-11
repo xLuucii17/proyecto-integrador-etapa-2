@@ -1,0 +1,204 @@
+/* !PALETA DE COLORES:
+https://colorhunt.co/palette/f8b195f67280c06c846c567b
+https://colorhunt.co/palette/fde5ecfcbaade48586916db3
+*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;600;900&display=swap');
+  /* font-family: 'Outfit', sans-serif; */
+
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(#916DB3, #C06C84, #F67280, #F8B195);
+    font-family: 'Outfit', sans-serif;
+}
+
+h1  {
+    font-weight: 900;
+}
+
+h2, h3, li{
+    font-weight: 600;
+}
+
+p  {
+    font-weight: 400;
+}
+
+
+/* NOSOTROS.HTML */
+.titulo-destacado span {
+    color: #323232;
+    background-color: #E48586;
+}
+
+.nosotros-iconos {
+    margin-left: 7em;
+    margin-right: 7em;
+}
+
+
+.nosotros-iconos i {
+    margin-right: 0.8em;
+    padding: 0;
+    color: #323232;
+    box-shadow: 0 0 3px rgba (0, 0, 0, .2);
+}
+
+
+.nosotros-iconos li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+}
+
+
+.nosotros-iconos i:hover {
+    color: crimson; 
+    transition: all .6s;
+}
+
+.nosotros-iconos i.fb:hover {
+    color: #1877f2;
+}
+
+.nosotros-iconos i.sp:hover {
+    color: #1db954;
+}
+
+.nosotros-iconos i.ig:hover {
+    color: #e1306c;
+}
+
+.nosotros-iconos i.git:hover {
+    color: #6e5494;
+}
+
+.nosotros-imagen {
+    border: 6px #6C567B solid;
+    border-radius: 20px;
+}
+
+.us {
+    border-radius: 20px;
+}
+
+.contacto {
+    border: #3333337e 0.05rem solid;
+    border-radius: 15px;
+    background-image: linear-gradient(#FDE5EC,#FCBAAD,#E48586);
+    transition-property: box-shadow;
+    transition-duration: 2s;
+}
+
+.contacto:hover {
+    box-shadow: -15px 10px 15px #5555555e;
+    background-image: linear-gradient(#E48586, #FCBAAD, #FDE5EC);
+}
+
+.form-boton {
+    background-image: linear-gradient(#916DB3, #C06C84);
+    border-color: #323232;
+}
+
+
+/* CARRITO.HTML */
+
+.tarjetas {
+    background-image: linear-gradient(#FCBAAD, #FDE5EC);
+    border-radius: 10px;
+}
+.tarjetas img {
+    width: 35px;
+}
+
+.pagar {
+    background-image: linear-gradient(#916DB3, #C06C84);
+}
+
+.compras {
+    background-image: linear-gradient(#FCBAAD, #FDE5EC, #f5babb);
+    border-radius: 30px;
+}
+
+.resumen {
+    background-image: linear-gradient(#FCBAAD, #FDE5EC);
+    border-radius: 20px;
+}
+
+.gratis {
+    background-color: #6cc06c;
+}
+
+.carrito-header {
+    font-size: 1.25rem;
+}
+
+/* NAVBAR*/
+.navbar {
+    background-image: linear-gradient(#C06C84, #916DB3) ;
+}
+.dropdown-menu {
+    background-image: linear-gradient(#C06C84, #916DB3);
+}
+
+.carrito i {
+    color: #6C567B;
+    
+    
+}
+.carrito i:hover {
+    color: #916DB3;
+    
+}
+
+
+/* FOOTER */
+.footer-bello {
+    background-image: linear-gradient(#F8B195, #F67280);
+}
+
+.copy {
+    background-color: hsla(0, 0%, 0%, 0.034);
+}
+
+/* PRODUCTOS */
+
+  .carrrd {
+
+    background-image: linear-gradient(#E48586, #FCBAAD, #FDE5EC);
+    box-shadow: inset;
+    width: 300px;
+
+
+  }
+
+
+.productoss {
+    flex-wrap: wrap;
+    justify-content: center;
+
+} 
+
+
+  .comprar {
+    background-image: linear-gradient(#916DB3, #C06C84);
+    border-color: #323232;
+    align-items: center;
+  }
+
+/* INDEX */
+
+.carousel-item {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }

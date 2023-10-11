@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/public/img/safeandsound2.webp" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <title>Proyecto Integrador | Etapa 1 | Inicio</title>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/public/img/sass2.webp" alt="Safe & Sound" width="120" height="60">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pages/cds.html">CDs</a></li>
+                  <li><a class="dropdown-item" href="pages/vinilos.html">Vinilos</a></li>
+                  <li><a class="dropdown-item" href="pages/cassettes.html">Cassettes</a></li>
+                  <li><a class="dropdown-item" href="pages/outlet.html">Outlet</a></li>
+                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+                    <!-- !Carrito -->
+            <div class="d-flex carrito">
+              <a href="pages/carrito.html" class="text-reset me-2">
+              <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            </a>
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+
+                    <!-- !Carousel -->
+<main class="container">
+  <section class="row">
+    <div id="carousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active my-5">
+          <img src="public/img/carousel/carousel1.jpg" class="d-block w-100" alt="Safe&Sound">
+        </div>
+        <div class="carousel-item my-5">
+          <img src="public/img/carousel/carousel2.jpg" class="d-block w-100" alt="Speak Now (TV)">
+        </div>
+        <div class="carousel-item my-5">
+          <img src="public/img/carousel/carousel3.jpg" class="d-block w-100" alt="Hotel Miranda!">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+</main>
+
+<main class="container">
+<section>
+  <h1 class="text-center my-5">LO + VENDIDO</h1>
+
+  <div class="d-flex flex-row productoss">
+    <div class="card carrrd m-4">
+        <img src="/public/img/cds/speak_nowtv.jpg" alt="Speak Now (Taylor's Version)" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Speak Now (Taylor's Version)</h5>
+            <ul class="list-unstyled">
+                <li>Taylor Swift</li>
+                <li>2023</li>
+                <li>Republic</li>
+            </ul>
+            <h4 class="precio">$6200</h4>
+            <a href="#" class="btn btn-primary comprar">Comprar</a>
+        </div>
+    </div>
+
+    <div class="card carrrd m-4">
+      <img src="/public/img/cds/look_sharp.jpg" alt="Look Sharp!" class="card-img-top">
+      <div class="card-body">
+          <h5 class="card-title">Look Sharp!</h5>
+          <ul class="list-unstyled">
+              <li>Roxette</li>
+              <li>1988</li>
+              <li>EMI</li>
+          </ul>
+          <h4 class="precio">$8000</h4>
+          <a href="#" class="btn btn-primary comprar">Comprar</a>
+      </div>
+      </div>
+
+      <div class="card carrrd m-4">
+        <img src="/public/img/cds/a_head_full_of_dreams.jpg" alt="A Head Full of Dreams" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">A Head Full of Dreams</h5>
+            <ul class="list-unstyled">
+                <li>Coldplay</li>
+                <li>2015</li>
+                <li>Atlantic</li>
+            </ul>
+            <h4 class="precio">$6000</h4>
+            <a href="#" class="btn btn-primary comprar">Comprar</a>
+        </div>
+    </div>
+
+    <div class="card carrrd m-4">
+      <img src="/public/img/vinilos/blackout.jpg" alt="Blackout" class="card-img-top">
+      <div class="card-body">
+          <h5 class="card-title">Blackout</h5>
+          <ul class="list-unstyled">
+              <li>Britney Spears</li>
+              <li>2007</li>
+              <li>Jive Records</li>
+          </ul>
+          <h4 class="precio">$63000</h4>
+          <a href="#" class="btn btn-primary comprar">Comprar</a>
+      </div>
+      </div>
+
+      <div class="card carrrd m-4">
+        <img src="/public/img/vinilos/thriller.jpg" alt="Thriller" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Thriller</h5>
+            <ul class="list-unstyled">
+                <li>Michael Jackson</li>
+                <li>1982</li>
+                <li>Epic</li>
+            </ul>
+            <h4 class="precio">$20000</h4>
+            <a href="#" class="btn btn-primary comprar">Comprar</a>
+        </div>
+    </div>
+
+    <div class="card carrrd m-4">
+      <img src="/public/img/vinilos/after_hours.jpg" alt="After Hours" class="card-img-top">
+      <div class="card-body">
+          <h5 class="card-title">After Hours</h5>
+          <ul class="list-unstyled">
+              <li>The Weeknd</li>
+              <li>2020</li>
+              <li>XO/Republic</li>
+          </ul>
+          <h4 class="precio">$49900</h4>
+          <a href="#" class="btn btn-primary comprar">Comprar</a>
+      </div>
+  </div>
+
+  </div>
+</section>
+</main>
+
+
+
+
+
+  <div class="footer-bello">
+
+    <footer class="text-center mt-5">
+    <div class="container pt-4">
+      <section class="mb-4">
+
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+  
+
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+  
+
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="mailto:lucilaheinzen22@gmail.com"
+          role="button"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+  
+
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+  
+
+
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://github.com/xLuucii17">
+          <i class="fa-brands fa-github">
+          </i></a>
+      </section>
+
+    </div>
+  
+    <div class="text-center text-dark p-3 copy">
+      © 2023 |
+      <a class="text-dark" href="#">Safe&Sound</a>
+    </div>
+  </footer>
+    
+  </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
