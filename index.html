@@ -42,9 +42,30 @@
           </div>
                     <!-- !Carrito -->
             <div class="d-flex carrito">
-              <a href="pages/carrito.html" class="text-reset me-2">
-              <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-            </a>
+              <div class="dropdown dropstart">
+                <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                </a>
+                <ul id="carrito" class="dropdown-menu mx-2">
+                  <table id="lista-carrito" class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                  </table>
+                  <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                    <button id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</button>
+                    <button id="procesar-pedido" class="btn btn-danger">Procesar Compra</button>
+                  </div>
+                </ul>
+              </div>
           </div>
           
         </div>
@@ -77,9 +98,9 @@
     </div>
   </section>
 </main>
-
+                    <!-- !Lo más vendido -->
 <main class="container">
-<section>
+<section id="lista-productos">
   <h1 class="text-center my-5">LO + VENDIDO</h1>
 
   <div class="d-flex flex-row productoss">
@@ -88,12 +109,12 @@
         <div class="card-body">
             <h5 class="card-title">Speak Now (Taylor's Version)</h5>
             <ul class="list-unstyled">
-                <li>Taylor Swift</li>
-                <li>2023</li>
+                <li class="artista">Taylor Swift</li>
+                <li class="year">2023</li>
                 <li>Republic</li>
             </ul>
             <h4 class="precio">$6200</h4>
-            <a href="#" class="btn btn-primary comprar">Comprar</a>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="1">Comprar</a>
         </div>
     </div>
 
@@ -102,12 +123,12 @@
       <div class="card-body">
           <h5 class="card-title">Look Sharp!</h5>
           <ul class="list-unstyled">
-              <li>Roxette</li>
-              <li>1988</li>
+              <li class="artista">Roxette</li>
+              <li class="year">1988</li>
               <li>EMI</li>
           </ul>
           <h4 class="precio">$8000</h4>
-          <a href="#" class="btn btn-primary comprar">Comprar</a>
+          <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="2">Comprar</a>
       </div>
       </div>
 
@@ -116,12 +137,12 @@
         <div class="card-body">
             <h5 class="card-title">A Head Full of Dreams</h5>
             <ul class="list-unstyled">
-                <li>Coldplay</li>
-                <li>2015</li>
+                <li class="artista">Coldplay</li>
+                <li class="year">2015</li>
                 <li>Atlantic</li>
             </ul>
             <h4 class="precio">$6000</h4>
-            <a href="#" class="btn btn-primary comprar">Comprar</a>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="3">Comprar</a>
         </div>
     </div>
 
@@ -130,12 +151,12 @@
       <div class="card-body">
           <h5 class="card-title">Blackout</h5>
           <ul class="list-unstyled">
-              <li>Britney Spears</li>
-              <li>2007</li>
+              <li class="artista">Britney Spears</li>
+              <li class="year">2007</li>
               <li>Jive Records</li>
           </ul>
           <h4 class="precio">$63000</h4>
-          <a href="#" class="btn btn-primary comprar">Comprar</a>
+          <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="4">Comprar</a>
       </div>
       </div>
 
@@ -144,12 +165,12 @@
         <div class="card-body">
             <h5 class="card-title">Thriller</h5>
             <ul class="list-unstyled">
-                <li>Michael Jackson</li>
-                <li>1982</li>
+                <li class="artista">Michael Jackson</li>
+                <li class="year">1982</li>
                 <li>Epic</li>
             </ul>
             <h4 class="precio">$20000</h4>
-            <a href="#" class="btn btn-primary comprar">Comprar</a>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="5">Comprar</a>
         </div>
     </div>
 
@@ -158,12 +179,12 @@
       <div class="card-body">
           <h5 class="card-title">After Hours</h5>
           <ul class="list-unstyled">
-              <li>The Weeknd</li>
-              <li>2020</li>
+              <li class="artista">The Weeknd</li>
+              <li class="year">2020</li>
               <li>XO/Republic</li>
           </ul>
           <h4 class="precio">$49900</h4>
-          <a href="#" class="btn btn-primary comprar">Comprar</a>
+          <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="6">Comprar</a>
       </div>
   </div>
 

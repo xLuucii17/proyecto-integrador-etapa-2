@@ -40,13 +40,6 @@
               </li>
             </ul>
           </div>
-                    <!-- !Carrito -->
-            <div class="d-flex carrito">
-              <a href="carrito.html" class="text-reset me-2">
-              <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-            </a>
-          </div>
-          
         </div>
       </nav>
     </header>
@@ -59,109 +52,16 @@
     <div class="compras card mb-4">
       <div class="card-header py-4">
         <ul class="list-group-flush p-1 m-0">
-          <li class="carrito-header list-group-item d-flex justify-content-between">
+          <li class="carrito-header list-group-item d-flex justify-content-center">
             Carrito
-            <span>4 artículos</span>
+            
           </li> 
         </ul>
       </div>
     
-      <div class="card-body">
+      <div class="card-body" id="lista-compra">
 
-          <div class="row py-3 mb-3">
-          <div class="col-4 mb-1">
-            <!-- imagen -->
-            <div class="bg-image rounded">
-              <img class="w-100" src="/public/img/cds/look_sharp.jpg" alt="Look Sharp!"></div>
-          </div>
-          
-          <div class="col-6 mt-3">
-            <h5><strong>Look Sharp!</strong></h5>
-            <p>Artista: Roxette</p>
-            <p>Año: 1988</p>
-            <p>Formato: CD</p>
-
-            <button type="button" class="basura btn btn-outline-dark"><i class="fas fa-trash"></i></button> 
-          </div>
-
-          <div class="col-2 mt-3">
-            <input type="text" class="form-control text-center p-1" placeholder="Cantidad" value="1">
-            <p class="text-center mt-4"><strong>$8000</strong></p>
-          </div>
-          </div>
-            <!-- ROW -->
-
-            <div class="row py-3 mb-3">
-              <div class="col-4 mb-1">
-                <!-- imagen -->
-                <div class="bg-image rounded">
-                  <img class="w-100" src="/public/img/cds/a_head_full_of_dreams.jpg" alt="A Head Full Of Dreams"></div>
-              </div>
-              
-              <div class="col-6 mt-3">
-                <h5><strong>A Head Full Of Dreams</strong></h5>
-                <p>Artista: Coldplay</p>
-                <p>Año: 2015</p>
-                <p>Formato: CD</p>
-    
-                <button type="button" class="basura btn btn-outline-dark"><i class="fas fa-trash"></i></button> 
-              </div>
-    
-              <div class="col-2 mt-3">
-                <input type="text" class="form-control text-center p-1" placeholder="Cantidad" value="1">
-                <p class="text-center mt-4"><strong>$6000</strong></p>
-              </div>
-            </div>
-
-            <!-- ROW -->
-
-            <div class="row py-3 mb-3">
-              <div class="col-4 mb-1">
-                <!-- imagen -->
-                <div class="bg-image rounded">
-                  <img class="w-100" src="/public/img/vinilos/speak_nowtv.jpg" alt="Speak Now (Taylor's Version)"></div>
-              </div>
-              
-              <div class="col-6 mt-3">
-                <h5><strong>Speak Now (Taylor's Version)</strong></h5>
-                <p>Artista: Taylor Swift</p>
-                <p>Año: 2023</p>
-                <p>Formato: Vinilo</p>
-    
-                <button type="button" class="basura btn btn-outline-dark"><i class="fas fa-trash"></i></button> 
-              </div>
-    
-              <div class="col-2 mt-3">
-                <input type="text" class="form-control text-center p-1" placeholder="Cantidad" value="1">
-                <p class="text-center mt-4"><strong>$46000</strong></p>
-              </div>
-              </div>
-            <!-- ROW -->
-
-            
-
-            <div class="row py-3 mb-3">
-              <div class="col-4 mb-1">
-                <!-- imagen -->
-                <div class="bg-image rounded">
-                  <img class="w-100" src="/public/img/vinilos/locura.jpg" alt="Locura"></div>
-              </div>
-              
-              <div class="col-6 mt-3">
-                <h5><strong>Locura</strong></h5>
-                <p>Artista: Virus</p>
-                <p>Año: 1985</p>
-                <p>Formato: Vinilo</p>
-    
-                <button type="button" class="basura btn btn-outline-dark"><i class="fas fa-trash"></i></button> 
-              </div>
-    
-              <div class="col-2 mt-3">
-                <input type="text" class="form-control text-center p-1" placeholder="Cantidad" value="1">
-                <p class="text-center mt-4"><strong>$16200</strong></p>
-              </div>
-  </div>
-</div>
+      </div>
 </div>
 </div>
 
@@ -175,10 +75,16 @@
       <div class="card-body">
         <ul class="list-group-flush p-1 m-0">
           <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-            Productos
-            <span>$76200</span>
+            Subtotal
+            <span id="sub-total">$</span>
           </li>
-          
+          <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+            <div>
+              <a href="https://www.tiendanube.com/blog/que-es-el-iva/"><strong>IVA</strong></a>
+            </div>
+            <p><strong id="iva">$</strong></p>
+          </li>
+
           <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
             Envío
             <span class="gratis">Gratis</span>
@@ -189,10 +95,10 @@
               <strong>Total de la compra</strong>
             </div>
 
-            <span><strong>$76200</strong></span>
+            <p><strong id="total">$</strong></p>
           </li>
         </ul>
-        <button type="button" class="pagar btn btn-dark btn-lg mt-4">Ir a pagar</button>
+        <button type="button" class="pagar btn btn-dark btn-lg mt-4">Pagar</button>
       </div>
     </div>
 

@@ -61,7 +61,7 @@ p  {
 }
 
 
-.nosotros-iconos i:hover {
+/* .nosotros-iconos i:hover {
     color: crimson; 
     transition: all .6s;
 }
@@ -80,7 +80,7 @@ p  {
 
 .nosotros-iconos i.git:hover {
     color: #6e5494;
-}
+} */
 
 .nosotros-imagen {
     border: 6px #6C567B solid;
@@ -140,6 +140,7 @@ p  {
 
 .carrito-header {
     font-size: 1.25rem;
+    font-weight: 900;
 }
 
 /* NAVBAR*/
