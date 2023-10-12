@@ -217,7 +217,10 @@ background-color: #a0ccf5;
     background-color: #9464ed;
   }
 
-
+.cuotas {
+    font-weight: 900;
+    color: #001525;
+}
   /* SWIPER */
 
 .swiper mySwiper {
