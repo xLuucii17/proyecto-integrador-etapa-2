@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/public/img/safeandsound2.webp" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <title>Proyecto Integrador | Etapa 1 | Nosotros</title>
+    <title>Safe&Sound | Nosotros</title>
   </head>
   <body>
 
@@ -42,16 +42,39 @@
             </ul>
           </div>
                     <!-- !Carrito -->
-            <div class="d-flex carrito">
-              <a href="carrito.html" class="text-reset me-2">
-              <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-            </a>
-          </div>
+                    <div class="d-flex carrito">
+                      <div class="dropdown dropstart">
+                        <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                        </a>
+                        <ul id="carrito" class="dropdown-menu mx-2">
+                          <table id="lista-carrito" class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              
+                            </tbody>
+                          </table>
+                          <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                            <button id="vaciar-carrito" class="btn btn-light">Vaciar Carrito</button>
+                            <button id="procesar-pedido" class="btn btn-dark">Procesar Compra</button>
+                          </div>
+                        </ul>
+                      </div>
+                  </div>
           
         </div>
       </nav>
     </header>
 
+    <section id="lista-productos">
+    </section>
 
     <main class="container nosotros mt-5">
     <div class="row justify-content-start">
@@ -66,7 +89,7 @@
           <div class="maps my-5">
             <h2 class="text-center mb-3">Ubicación</h2>
             <p class="text-center">9 de Julio 100 (Centro), Ciudad de Córdoba</p>
-            <iframe width="650" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20C%C3%B3rdoba+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" class="justify-content-center"></iframe>
+            <iframe width="700" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20C%C3%B3rdoba+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" class="justify-content-center"></iframe>
            </div>
       </div>
 
@@ -83,9 +106,9 @@
             <img class="img-fluid us" src="/public/img/nosotros/about_us2.webp" alt="Nosotros">
           </div>
 
-          <div class="nosotros-imagen mx-5 my-5 p-1">
+          <!-- <div class="nosotros-imagen mx-5 my-5 p-1">
             <img class="img-fluid us" src="/public/img/nosotros/records.webp" alt="Nosotros">
-          </div>
+          </div> -->
 
 
       </div>

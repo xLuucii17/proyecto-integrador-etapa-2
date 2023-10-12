@@ -143,6 +143,11 @@ p  {
     font-weight: 900;
 }
 
+/* table#lista-carrito.table {
+    background-image: linear-gradient(#916DB3, #C06C84, #F67280, #F8B195);
+} */
+
+
 /* NAVBAR*/
 .navbar {
     background-image: linear-gradient(#C06C84, #916DB3) ;

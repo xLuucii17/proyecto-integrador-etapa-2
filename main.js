@@ -65,8 +65,3 @@ function esCarrito() {
     carritoCompra.addEventListener('change', e => obtenerEvento(e))
     carritoCompra.addEventListener('keyup', e => obtenerEvento(e))
 }
-
-
-
-
-

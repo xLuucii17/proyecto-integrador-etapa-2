@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/public/img/safeandsound2.webp" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <title>Proyecto Integrador | Etapa 1 | CDs</title>
+    <title>Safe&Sound | CDs</title>
   </head>
   <body>
 
@@ -41,11 +41,32 @@
             </ul>
           </div>
                     <!-- !Carrito -->
-            <div class="d-flex carrito">
-              <a href="carrito.html" class="text-reset me-2">
-              <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-            </a>
-          </div>
+                    <div class="d-flex carrito">
+                      <div class="dropdown dropstart">
+                        <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                        </a>
+                        <ul id="carrito" class="dropdown-menu mx-2">
+                          <table id="lista-carrito" class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              
+                            </tbody>
+                          </table>
+                          <div class="d-grid gap-2 d-md-block justify-content-md-center ms-1">
+                            <button id="vaciar-carrito" class="btn btn-light">Vaciar Carrito</button>
+                            <button id="procesar-pedido" class="btn btn-dark">Procesar Compra</button>
+                          </div>
+                        </ul>
+                      </div>
+                  </div>
           
         </div>
       </nav>
@@ -53,7 +74,7 @@
 
 <!--!Productos -->
 <main class="container">
-  <section class="vinilos d-flex justify-content-center">
+  <section id="lista-productos" class="vinilos d-flex justify-content-center">
 <div>
     <h1 class="text-center my-5">CDs</h1>
 
@@ -63,12 +84,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Speak Now (Taylor's Version)</h5>
                     <ul class="list-unstyled">
-                        <li>Taylor Swift</li>
+                        <li class="artista">Taylor Swift</li>
                         <li>2023</li>
                         <li>Republic</li>
                     </ul>
                     <h4 class="precio">$6200</h4>
-                    <a href="#" class="btn btn-primary comprar">Comprar</a>
+                    <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="100">Comprar</a>
                 </div>
             </div>
 
@@ -77,12 +98,12 @@
                   <div class="card-body">
                       <h5 class="card-title">Dawn FM</h5>
                       <ul class="list-unstyled">
-                          <li>The Weeknd</li>
-                          <li>2022</li>
+                          <li class="artista">The Weeknd</li>
+                          <li class="year">2022</li>
                           <li>XO/Republic</li>
                       </ul>
                       <h4 class="precio">$3500</h4>
-                      <a href="#" class="btn btn-primary comprar">Comprar</a>
+                      <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="200">Comprar</a>
                   </div>
               </div>
 
@@ -91,12 +112,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Future Nostalgia - The Moonlight Edition</h5>
                     <ul class="list-unstyled">
-                        <li>Dua Lipa</li>
-                        <li>2020</li>
+                        <li class="artista">Dua Lipa</li>
+                        <li class="year">2020</li>
                         <li>Warner</li>
                     </ul>
                     <h4 class="precio">$5900</h4>
-                    <a href="#" class="btn btn-primary comprar">Comprar</a>
+                    <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="300">Comprar</a>
                 </div>
             </div>
 
@@ -105,12 +126,12 @@
               <div class="card-body">
                   <h5 class="card-title">An Evening With Silk Sonic</h5>
                   <ul class="list-unstyled">
-                      <li>Silk Sonic</li>
-                      <li>2021</li>
+                      <li class="artista">Silk Sonic</li>
+                      <li class="year">2021</li>
                       <li>Atlantic</li>
                   </ul>
                   <h4 class="precio">$4000</h4>
-                  <a href="#" class="btn btn-primary comprar">Comprar</a>
+                  <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="400">Comprar</a>
               </div>
           </div>
 
@@ -119,12 +140,12 @@
             <div class="card-body">
                 <h5 class="card-title">After Hours</h5>
                 <ul class="list-unstyled">
-                    <li>The Weeknd</li>
-                    <li>2020</li>
+                    <li class="artista">The Weeknd</li>
+                    <li class="year">2020</li>
                     <li>XO/Republic</li>
                 </ul>
                 <h4 class="precio">$6000</h4>
-                <a href="#" class="btn btn-primary comprar">Comprar</a>
+                <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="500">Comprar</a>
             </div>
         </div>
 
@@ -133,12 +154,12 @@
           <div class="card-body">
               <h5 class="card-title">A Head Full of Dreams</h5>
               <ul class="list-unstyled">
-                  <li>Coldplay</li>
-                  <li>2015</li>
+                  <li class="artista">Coldplay</li>
+                  <li class="year">2015</li>
                   <li>Atlantic</li>
               </ul>
               <h4 class="precio">$6000</h4>
-              <a href="#" class="btn btn-primary comprar">Comprar</a>
+              <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="600">Comprar</a>
           </div>
       </div>
 
@@ -147,12 +168,12 @@
         <div class="card-body">
             <h5 class="card-title">ANTI</h5>
             <ul class="list-unstyled">
-                <li>Rihanna</li>
-                <li>2016</li>
+                <li class="artista">Rihanna</li>
+                <li class="year">2016</li>
                 <li>Roc Nation</li>
             </ul>
             <h4 class="precio">$6500</h4>
-            <a href="#" class="btn btn-primary comprar">Comprar</a>
+            <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="700">Comprar</a>
         </div>
     </div>
 
@@ -161,12 +182,12 @@
       <div class="card-body">
           <h5 class="card-title">True</h5>
           <ul class="list-unstyled">
-              <li>Avicii</li>
-              <li>2013</li>
+              <li class="artista">Avicii</li>
+              <li class="year">2013</li>
               <li>Universal</li>
           </ul>
           <h4 class="precio">$2000</h4>
-          <a href="#" class="btn btn-primary comprar">Comprar</a>
+          <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="800">Comprar</a>
       </div>
   </div>
 
@@ -175,12 +196,12 @@
     <div class="card-body">
         <h5 class="card-title">Shawn Mendes</h5>
         <ul class="list-unstyled">
-            <li>Shawn Mendes</li>
-            <li>2018</li>
+            <li class="artista">Shawn Mendes</li>
+            <li class="year">2018</li>
             <li>Island Records</li>
         </ul>
         <h4 class="precio">$2200</h4>
-        <a href="#" class="btn btn-primary comprar">Comprar</a>
+        <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="900">Comprar</a>
     </div>
 </div>
 
@@ -189,12 +210,12 @@
   <div class="card-body">
       <h5 class="card-title">The Works</h5>
       <ul class="list-unstyled">
-          <li>Queen</li>
-          <li>1984</li>
+          <li class="artista">Queen</li>
+          <li class="year">1984</li>
           <li>EMI</li>
       </ul>
       <h4 class="precio">$3300</h4>
-      <a href="#" class="btn btn-primary comprar">Comprar</a>
+      <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="110">Comprar</a>
   </div>
 </div>
 
@@ -203,12 +224,12 @@
 <div class="card-body">
     <h5 class="card-title">Look Sharp!</h5>
     <ul class="list-unstyled">
-        <li>Roxette</li>
-        <li>1988</li>
+        <li class="artista">Roxette</li>
+        <li class="year">1988</li>
         <li>EMI</li>
     </ul>
     <h4 class="precio">$8000</h4>
-    <a href="#" class="btn btn-primary comprar">Comprar</a>
+    <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="120">Comprar</a>
 </div>
 </div>
 
@@ -217,12 +238,12 @@
 <div class="card-body">
   <h5 class="card-title">Faith</h5>
   <ul class="list-unstyled">
-      <li>George Michael</li>
-      <li>1987</li>
+      <li class="artista">George Michael</li>
+      <li class="year">1987</li>
       <li>Epic/Columbia</li>
   </ul>
   <h4 class="precio">$5800</h4>
-  <a href="#" class="btn btn-primary comprar">Comprar</a>
+  <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="130">Comprar</a>
 </div>
 </div>
 
@@ -231,12 +252,12 @@
   <div class="card-body">
       <h5 class="card-title">True Blue</h5>
       <ul class="list-unstyled">
-          <li>Madonna</li>
-          <li>1986</li>
+          <li class="artista">Madonna</li>
+          <li class="year">1986</li>
           <li>Sire Records</li>
       </ul>
       <h4 class="precio">$3900</h4>
-      <a href="#" class="btn btn-primary comprar">Comprar</a>
+      <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="140">Comprar</a>
   </div>
 </div>
 
@@ -245,12 +266,12 @@
 <div class="card-body">
     <h5 class="card-title">The Final Countdown</h5>
     <ul class="list-unstyled">
-        <li>Europe</li>
-        <li>1986</li>
+        <li class="artista">Europe</li>
+        <li class="year">1986</li>
         <li>Epic</li>
     </ul>
     <h4 class="precio">$7000</h4>
-    <a href="#" class="btn btn-primary comprar">Comprar</a>
+    <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="150">Comprar</a>
 </div>
 </div>
 
@@ -259,12 +280,12 @@
 <div class="card-body">
   <h5 class="card-title">Whenever You Need Somebody</h5>
   <ul class="list-unstyled">
-      <li>Rick Astley</li>
-      <li>1987</li>
+      <li class="artista">Rick Astley</li>
+      <li class="year">1987</li>
       <li>RCA</li>
   </ul>
   <h4 class="precio">$5100</h4>
-  <a href="#" class="btn btn-primary comprar">Comprar</a>
+  <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="160">Comprar</a>
 </div>
 </div>
 
@@ -273,12 +294,12 @@
   <div class="card-body">
       <h5 class="card-title">Ready For Romance</h5>
       <ul class="list-unstyled">
-          <li>Modern Talking</li>
-          <li>1986</li>
+          <li class="artista">Modern Talking</li>
+          <li class="year">1986</li>
           <li>BMG</li>
       </ul>
       <h4 class="precio">$6200</h4>
-      <a href="#" class="btn btn-primary comprar">Comprar</a>
+      <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="170">Comprar</a>
   </div>
 </div>
 
@@ -287,12 +308,12 @@
 <div class="card-body">
     <h5 class="card-title">Actually</h5>
     <ul class="list-unstyled">
-        <li>Pet Shop Boys</li>
-        <li>1987</li>
+        <li class="artista">Pet Shop Boys</li>
+        <li class="year">1987</li>
         <li>Parlophone</li>
     </ul>
     <h4 class="precio">$5000</h4>
-    <a href="#" class="btn btn-primary comprar">Comprar</a>
+    <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="180">Comprar</a>
 </div>
 </div>
 
@@ -301,12 +322,12 @@
 <div class="card-body">
   <h5 class="card-title">Heaven On Earth</h5>
   <ul class="list-unstyled">
-      <li>Belinda Carlisle</li>
-      <li>1987</li>
+      <li class="artista">Belinda Carlisle</li>
+      <li class="year">1987</li>
       <li>MCA Records</li>
   </ul>
   <h4 class="precio">$6600</h4>
-  <a href="#" class="btn btn-primary comprar">Comprar</a>
+  <a href="#" class="btn btn-primary comprar agregar-carrito" data-id="190">Comprar</a>
 </div>
 </div>
 
