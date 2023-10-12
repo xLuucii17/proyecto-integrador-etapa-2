@@ -1,6 +1,8 @@
 /* Librerías */
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 
 
@@ -65,3 +67,18 @@ function esCarrito() {
     carritoCompra.addEventListener('change', e => obtenerEvento(e))
     carritoCompra.addEventListener('keyup', e => obtenerEvento(e))
 }
+
+
+const swiper = new Swiper(".mySwiper", {
+    speed: 600,
+    parallax: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  })
+
